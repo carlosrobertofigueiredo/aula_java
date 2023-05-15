@@ -1,0 +1,48 @@
+<script>
+
+ class Animal{
+    #nome = ''
+    especie = ''
+    familia
+    nascimento
+    metrica = {}
+
+    constructor(){
+        this.nome = 'bicho doido'
+        this.especie = ' indefinida'
+        document.write('criando um bicho' + this.#nome + '<br>')
+
+    }
+
+    alimentacao() {}
+
+    vacinar() {}
+
+    get nomeb() {
+        return this.#nome
+    }
+
+    set nome(nome){
+        this.#nome = nome
+    }
+
+
+ }
+
+ var foca = new Animal()
+ foca.nome = 'fofinha'
+ foca.especie = 'peixe'
+ foca.familia = 'Sila'
+ foca.nascimento = '10/10/2022'
+
+ console.log(foca)
+
+
+ var formiga = new Animal('Miguinha', 'cruataceo')
+
+ console.log(formiga)
+
+
+
+
+</script>
