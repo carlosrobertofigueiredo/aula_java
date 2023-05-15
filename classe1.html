@@ -1,48 +1,24 @@
-<script>
+<script type="module">
 
- class Animal{
-    #nome = ''
-    especie = ''
-    familia
-    nascimento
-    metrica = {}
+    //Importa a classe 'Aninal'
 
-    constructor(){
-        this.nome = 'bicho doido'
-        this.especie = ' indefinida'
-        document.write('criando um bicho' + this.#nome + '<br>')
+    import {Animal} from "./Animal.class.js"
 
-    }
+    //Importa a classe 'Mamifero'
 
-    alimentacao() {}
+    import {Mamifero} from './Mamifero.class.js'
 
-    vacinar() {}
+    var foca = new Animal('Fofinha', 'mamífero')
+    console.log(foca.nome)
+    foca.nome = 'Maria'
+    console.log(foca.nome)
+    console.log(foca)
 
-    get nomeb() {
-        return this.#nome
-    }
+    var formiga = new Animal('Miguinha', 'Artropode')
+    console.log(formiga)
 
-    set nome(nome){
-        this.#nome = nome
-    }
-
-
- }
-
- var foca = new Animal()
- foca.nome = 'fofinha'
- foca.especie = 'peixe'
- foca.familia = 'Sila'
- foca.nascimento = '10/10/2022'
-
- console.log(foca)
-
-
- var formiga = new Animal('Miguinha', 'cruataceo')
-
- console.log(formiga)
-
-
+    var mimosa = new Mamifero('Mimosa', 'Vaca')
+    console.log(mimosa)
 
 
 </script>
